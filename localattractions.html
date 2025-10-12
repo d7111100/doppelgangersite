@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Local Attractions</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Special Gothic Expanded One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Trykker' rel='stylesheet'>
+     <!--I got code for Google fonts from https://www.w3schools.com/howto/tryit.asp?font=Special%20Gothic%20Expanded%20One and https://www.w3schools.com/howto/tryit.asp?font=Trykker-->
+    <style type="text/css">
+     h1 { font-family: "Special Gothic Expanded One";
+        font-size: 32px;
+        color: #E06649; 
+        text-align:center  
+    }
+    
+    </style>   
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Mountain Oasis Bed and Breakfast</h1>
+        </header>
+
+        <nav> 
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a>  
+            <a href="rooms.html">Rooms</a>  
+            <a href="amenities.html">Amentities</a>  
+            <a href="localattractions.html">Local Attractions</a>   
+            <a href="contact.html">Contact</a>  
+        </nav>
+<section id="main">
+         <h2 style="color:#ee8a71; font-family: Arial, Helvetica, sans-serif; text-align: center; text-shadow: 2px 2px 4px #817777">Things to Do in Lake Tahoe</h2>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/spa.jpg" style="width:100%">
+    <div class="text">Book a Spa Day</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/shopping.jpg" style="width:100%">
+    <div class="text">Go Shopping in Town</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/hiking.jpg" style="width:100%">
+    <div class="text">Go Hiking</div>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+ 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</Script>
+        
+
+            
+ <br>
+        
+  <p style="color: #4b4646;">Spa packages are a favorite for our weekend guests, 
+    and we will arrange the for you even on short notice. Your booking may be made in advance on the reservation form.</p>
+ 
+  <p style="color: #4b4646;">We will arrage your ski package for a day of skiing. 
+    The package includes ski lift, ski rental and ski lessons with a local pro. We will also provide
+    drinks and snacks for your day trip to the ski resort. Transportation can be arranged upon request.</p>
+  
+  <p style="color: #4b4646;">Swimming and watersports on the lake are at your 
+    own discretion. Watersports rental shops are open during the summer months along the lake.</p>
+ 
+  <p style="color: #4b4646;">Hiking trails are open all year round and are a 
+    favorite during the Fall. We provide maps and a local guide may be hired. You may request 
+    drinks and snacks for your day of hiking.</p>
+ 
+  <p style="color: #4b4646;">For a more laid back experience, we recommend 
+    dining in Truckee at the many restaurants and shopping in the local boutiques. Our many 
+    guests have left their own recommendations in our guestbook.</p>
+  
+</div>
+
+<div style="color: #4b4646; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+<p>
+
+</p>
+</div>
+</section>
+        <footer style="color: #4b4646; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+
+        Photo by Mediamodifier, Grant Czerwinski, Manoj Kulkarni, Maarten Duineveld and Immo Wegmann on Unsplash 
+        <br>
+            Copyright 2025
+    <br>
+</footer>  
+                   
+</div>
+
+</body>
+</html>
+  <!--I got the code for the slide show and text shadowing from w3schools.com. Link to text shadowing https://www.w3schools.com/css/css3_shadows.asp   Link to slide show Link to slide-show https://www.w3schools.com/howto/howto_js_slideshow.asp>  
+

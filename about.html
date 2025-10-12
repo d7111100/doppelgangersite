@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Special Gothic Expanded One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Trykker' rel='stylesheet'>
+     <!--I got code for Google fonts from https://www.w3schools.com/howto/tryit.asp?font=Special%20Gothic%20Expanded%20One and https://www.w3schools.com/howto/tryit.asp?font=Trykker-->
+    <style type="text/css">
+     h1 { font-family: "Special Gothic Expanded One";
+        font-size: 32px;
+        color: #E06649; 
+        text-align:center  
+    }
+    
+    </style>   
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Mountain Oasis Bed and Breakfast</h1>
+        </header>
+
+        <nav> 
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a>  
+            <a href="rooms.html">Rooms</a>  
+            <a href="amenities.html">Amentities</a>  
+            <a href="localattractions.html">Local Attractions</a>   
+            <a href="contact.html">Contact</a>  
+        </nav>
+        <section id="main"> 
+        <br>
+        <h2 style="color:#ee8a71; font-family: Arial, Helvetica, sans-serif; text-align: center; text-shadow: 2px 2px 4px #817777">About Us</h2>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="images/harryandfrances.jpg" style="width:100%">
+    <div class="text">Harry and Frances Doppelganger</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="images/skiing.jpg" style="width:100%">
+    <div class="text">Sierra Nevada Mountains</div>
+  </div>
+
+    <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  
+ 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</Script>
+
+      
+        
+       
+      <p style="color: #4b4646;">
+                  Harry and Frances Doppelganger, and their daughters Emma and Faith, are dedicated to hosting guests at their Bed and 
+                Breakfasts.</p>
+      <p style="color: #4b4646;">
+                  They own four Bed and Breakfasts located in Truckee Lake Tahoe, California, Put-In-Bay, Ohio, 
+                Erie, Pennsylvania, and Conneaut Lake, Ohio.</p>  
+           
+      <p style="color: #4b4646;">
+                  They specialize in small town experiences and hospitality in 
+                the Midwest, West and the Great Lakes region.</p> 
+               
+      <p style="color: #4b4646;">
+                  Mountain Oasis Bed and Breakfast is located in <a href="https://www.visittruckeetahoe.com/explore/about-truckee" target="_blank">Lake Tahoe Truckee</a> in the Sierra Nevada Mountains. 
+                    This quaint town is the birthplace of downhill skiing and home to the 1960 Winter Olympics. The 
+                    name Truckee was derived from the name Tru-ki-zo, a Paiute chief, who engaged in commerce with settlers 
+                    to the region. Truckee started out in 1863 on the wagon road crossing the Sierras. It became a stop on 
+                    the Central Pacific Railroad in 1868. Truckee is a town with a population of nearly 17,000 incorporated 
+                    in Nevada County, California.</p> 
+               
+      <p style="color: #4b4646;">
+                  Near Lake Taho, it is a great place for mountain climbing, cycling, hiking, 
+                    shopping, eating at restaurants and skiing. In the Fall there are wine festivals, music festivals and 
+                    Octoberfest. Fall colors make a drive through the region spectacular. Activities on the lake include 
+                    boating and swimming. Truckee is a perfect place for solo travelers, couples, groups and families. The 
+                    weather is typically warm and dry in the summer, and snowy and cold in the winter. The town is located 
+                    at an elevation of 6,000 feet. Sudden weather changes are not uncommon. Truckee receives about 200 inches
+                     of snow or more annually. The town features many bars, small batch breweries and restaurants for every taste. 
+                     There are shopping malls and stores to buy outdoor gear. Shops downtown include stores for gourmet foods, 
+                     clothing for children, gifts and jewelry. There are also many spas and wellness centers.</p>
+           
+        </section>
+        
+        
+        <br>
+        
+<footer style="color: #4b4646; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    Photo by Wright Brand Bacon, Maarten Duineveld on Unsplash
+    Copyright 2025
+    <br>
+</footer>               
+    </div>
+</body>
+</html>
+
+<!--I got the code for the slide show from W3schools.com and also the code for the text-shadowing-->

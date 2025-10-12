@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Special Gothic Expanded One' rel='stylesheet'>
+     <!--I got code for Google fonts from https://www.w3schools.com/howto/tryit.asp?font=Special%20Gothic%20Expanded%20One-->
+    <style type="text/css">
+     h1 { font-family: "Special Gothic Expanded One";
+        font-size: 32px;
+        color: #E06649;   
+    }
+    </style>   
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Mountain Oasis Bed and Breakfast</h1>
+        </header>
+
+        <nav> 
+            <a href="layout_main.html">Home</a> 
+            <a href="about.html">About</a>  
+            <a href="rooms.html">Rooms</a>  
+            <a href="amenities.html">Amentities</a>  
+            <a href="localattractions.html">Local Attractions</a>   
+            <a href="contact.html">Contact</a>  
+        </nav>
+        <br>
+        <h2 style="color:#E06649; font-family: Arial; font-style:italic; text-align: left;">Contact</h2>
+
+         <form style="color: #4b4646; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <label for="firstname">First Name:<label> <input type="text" id="firstname" name="firstname" value="john"><br>
+            <label for="lastname">Last Name:<label> <input type="text" id="lastname" name="lastname" value="Doe">
+            <br>
+            <p>What is your phone number?</p>
+            <label for="phone"> Enter your phone number: </label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9] {3}-[0-9]-[0-9]{3}">
+            <br>
+            <p>Are you 18 years old or older?</p>
+            <input type="radio" id="yes" name="yes"><label for="yes">YES</label>
+            <input type="radio" id="no" name="no"><label for="no">NO</label>
+            <br>
+            <p>Contact us here</p>
+            <textarea rows="6" cols="60" name="comments">
+                
+            </textarea>
+            <br>
+
+            <form action="mailto:donna@mymountainoasis.com" method="post" enctype="text/plain">
+            <br>
+            <input type="submit" name="submit" value="Submit"/>
+            <input type="reset" name="reset" value="Reset"/>
+           
+        <form action="mailto:donna@mymountainoasis.com" method="post" enctype="text/plain"></form>
+        <br>
+        </form>
+        <!--I got code for the form from https://www.w3schools.com/html/html_forms.asp-->
+        <br>
+        <br>
+         <a href="mailto:donna@mymountainoasis.com">Send me an email if you have questions</a>
+    <footer style="color: #4b4646; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    Copyright 2025
+    </footer>
+    <br>
+</footer>               
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Breakfast</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Special Gothic Expanded One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Trykker' rel='stylesheet'>
+     <!--I got code for Google fonts from https://www.w3schools.com/howto/tryit.asp?font=Special%20Gothic%20Expanded%20One and https://www.w3schools.com/howto/tryit.asp?font=Trykker-->
+    <style type="text/css">
+h1 { font-family: "Special Gothic Expanded One";
+        font-size: 32px;
+        color: #E06649; 
+        text-align:center  
+    }
+p {
+	font-family: verdana;
+	font-size: 20px
+}
+
+ul {
+	list-style-type:square
+}
+ul li {
+    color:antiquewhite
+}
+    </style>   
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Mountain Oasis Bed and Breakfast</h1>
+        </header>
+        <section>
+            <h2 style="color:#E06649; font-family: Arial; font-style:italic; text-align: center;">Our Chef's Selections</h2>
+            <p style="color:#faebd7; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: left;">
+                <ul style="list-style-type: square;">
+                    <li>Monday: Bacon, Eggs, Toast and reakfast Potatoes</li>
+                    <li>Tuesday: Pancakes, Eggs, Sausage, Toast, and Breakfast Potatoes</li>
+                    <li>Wednesday: Waffles, Eggs, Canadian Bacon, Toast and Breakfast Potatoes</li>
+                    <li>Thursday: Donuts, Eggs, Bacon, Toast and Potato Pancakes</li>
+                    <li>Friday: Assorted pastries, Eggs, Sausage, Toast, Fried Apples and Homestyle Potatoes</li>
+                    <li>Saturday: Eggs, Bacon, Sausage with Gravy, Hash brown casserole, Fried apples and Biscuits</li>
+                    <li>Sunday: Waffles, Donuts, Assorted Pastries, Eggs, Bacon, Breakfast Potatoes of the chef's choice, Toast and cereal</li>
+                    <li>Always available: Coffe, Tea, Milk, Juices, Drinks and Snacks</li>
+                </ul>
+            </p>  
+        </section>
+    <main>
+        
+            <aside> 
+                <h2 style="color:#E06649; font-family: Arial; font-style:italic; text-align: center;">Breakfast and Activities</h2>
+                <p> </p>
+                <a href="breakfast.html">Breakfast Menu</a>
+                <br>
+                <a href="indooractivities.html">Things To Do Indoors</a>
+                <br>
+                <a href="outdooractivities.html">Things To Do Outdoors</a> 
+                <a href="index.html">Home</a>  
+            </aside>
+    </main>  
+
+           <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/donuts.jpg" style="width:100%">
+    <div class="text">Donuts</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/waffles.jpg" style="width:100%">
+    <div class="text">Waffles</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/croissants.jpg" style="width:100%">
+    <div class="text">Croissants</div>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+ 
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</Script>
+   <footer style="color: #4b4646; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Photos courtesy of Guillermo Nolasco, Annie Spratt and Perrine on Unsplash
+    <br> 
+    Copyright 2025
+    <br>
+</footer>               
+    </div>
+</body>
+</html>
+<!--I got the code for the slide show from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
